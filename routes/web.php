@@ -11,6 +11,9 @@
 |
 */
 
+Route::get("/", function() {
+    return ["health_check" => true];
+});
 Route::resource('/group', 'GroupController', array('except' => array('create', 'edit')));
 Route::resource("group.schedule", "ScheduleController", [
     'parameters' => 'singular',

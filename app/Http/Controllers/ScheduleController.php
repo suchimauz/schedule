@@ -46,11 +46,11 @@ class ScheduleController extends Controller
         $schedule = Schedule::updateOrCreate(
             [
                 'week' => $request->week,
-                'group_id' => $request->group_id,
+                'group_id' => $group_id,
                 'type' => $request->type
             ], 
             [
-                'group_id' => $request->group_id,
+                'group_id' => $group_id,
                 'week' => $request->week,
                 'type' => $request->type,
                 'first_lesson_name' => $request->first_lesson_name,

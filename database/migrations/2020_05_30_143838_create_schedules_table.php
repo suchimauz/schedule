@@ -21,20 +21,28 @@ class CreateSchedulesTable extends Migration
             $table->string('type');
             $table->string('first_lesson_name')->nullable();
             $table->string('first_lesson_teacher')->nullable();
+            $table->string('first_lesson_cabinet')->nullable();
             $table->string('second_lesson_name')->nullable();
             $table->string('second_lesson_teacher')->nullable();
+            $table->string('second_lesson_cabinet')->nullable();
             $table->string('third_lesson_name')->nullable();
             $table->string('third_lesson_teacher')->nullable();
+            $table->string('third_lesson_cabinet')->nullable();
             $table->string('fouth_lesson_name')->nullable();
             $table->string('fouth_lesson_teacher')->nullable();
+            $table->string('fouth_lesson_cabinet')->nullable();
             $table->string('fifth_lesson_name')->nullable();
             $table->string('fifth_lesson_teacher')->nullable();
+            $table->string('fifth_lesson_cabinet')->nullable();
             $table->string('sixth_lesson_name')->nullable();
             $table->string('sixth_lesson_teacher')->nullable();
+            $table->string('sixth_lesson_cabinet')->nullable();
             $table->string('seventh_lesson_name')->nullable();
             $table->string('seventh_lesson_teacher')->nullable();
+            $table->string('seventh_lesson_cabinet')->nullable();
             $table->string('eight_lesson_name')->nullable();
             $table->string('eight_lesson_teacher')->nullable();
+            $table->string('eight_lesson_cabinet')->nullable();
             $table->timestamps();
         });
     }
